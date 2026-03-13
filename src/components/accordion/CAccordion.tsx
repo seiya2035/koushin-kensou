@@ -8,9 +8,10 @@ import Button from '@mui/material/Button';
 import "./style.css"
 
 const CAccordion = () => {
+    
     return (
         <>
-            <Accordion>
+            <Accordion className="custom-accordion">
                 <AccordionSummary
                     expandIcon={"+"}
                     className='span-accordion-summary'
@@ -25,7 +26,7 @@ const CAccordion = () => {
                     10年
                 </AccordionDetails>
             </Accordion>
-            <Accordion>
+            <Accordion className="custom-accordion">
                 <AccordionSummary
                     expandIcon={"+"}
                     className='span-accordion-summary'
@@ -39,7 +40,7 @@ const CAccordion = () => {
                     malesuada lacus ex, sit amet blandit leo lobortis eget.
                 </AccordionDetails>
             </Accordion>
-            <Accordion defaultExpanded>
+            <Accordion defaultExpanded className="custom-accordion">
                 <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
                     className='span-accordion-summary'

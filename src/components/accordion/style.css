@@ -1,3 +1,4 @@
-.span-accordion-summary {
+.custom-accordion .span-accordion-summary {
     margin-bottom: 30px;
+    background-color: #343B55;
 }
