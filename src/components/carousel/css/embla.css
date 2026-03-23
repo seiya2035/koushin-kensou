@@ -137,6 +137,7 @@
   justify-content: center;
   border-radius: 50%;
   position: relative;
+  opacity: 0;
 }
 .embla__dot:before,
 .embla__dot:after {
@@ -158,12 +159,29 @@
 .embla__dot--selected:after {
   opacity: 1;
 }
-.embla_text{
+.embla_text_wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10rem;
+}
+.embla_text {
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.embla_text--active {
+  opacity: 1;
+  pointer-events: auto;
+  position: relative;
 }
 .embla_text h2,
 .embla_text p {

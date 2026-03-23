@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Proposal />
-      <EmblaCarousel slides={Array.from(Array(5).keys())} />
+      <EmblaCarousel slides={Array.from(Array(5).keys())} options={{ loop: true }} />
 
     </div>
   );

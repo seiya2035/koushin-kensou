@@ -16,6 +16,29 @@ type PropType = {
   options?: EmblaOptionsType
 }
 
+const textSections = [
+  {
+    h2: '代表 石川翔吾',
+    p: '一一一一 一言 一一一一\n一一一一 一言 一一一一\n一一一一 一言 一一一一',
+  },
+  {
+    h2: '副代表 戸崎圭太',
+    p: '二二二二 二言 二二二二\n二二二二 二言 二二二二\n二二二二 二言 二二二二',
+  },
+  {
+    h2: '事務局長 鈴木ノリアキ',
+    p: '三三三三 三言 三三三三\n三三三三 三言 三三三三\n三三三三 三言 三三三三',
+  },
+  {
+    h2: '顧問 田中渡辺',
+    p: '四四四四 四言 四四四四\n四四四四 四言 四四四四\n四四四四 四言 四四四四',
+  },
+  {
+    h2: '顧問 井上聖也',
+    p: '四四四四 四言 四四四四\n四四四四 四言 四四四四\n四四四四 四言 四四四四',
+  },
+]
+
 const EmblaCarousel = (props: PropType) => {
   const { slides, options } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
@@ -62,11 +85,24 @@ const EmblaCarousel = (props: PropType) => {
           ))}
         </div>
       </div>
-      <div className="embla_text">
-        <h2>代表 石川翔吾</h2>
-        <p>一一一一 一言 一一一一<br />
-        一一一一 一言 一一一一<br />
-        一一一一 一言 一一一一</p>
+
+      <div className="embla_text_wrapper">
+        {textSections.map((section, index) => (
+          <div
+            key={index}
+            className={`embla_text${index === selectedIndex ? ' embla_text--active' : ''}`}
+          >
+            <h2>{section.h2}</h2>
+            <p>
+              {section.p.split('\n').map((line, i, arr) => (
+                <React.Fragment key={i}>
+                  {line}
+                  {i < arr.length - 1 && <br />}
+                </React.Fragment>
+              ))}
+            </p>
+          </div>
+        ))}
       </div>
     </div>
     </div>
