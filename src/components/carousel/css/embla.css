@@ -8,6 +8,7 @@
   --slide-size-sm: 50%;
   --slide-spacing-lg: 2rem;
   --slide-size-lg: calc(100% / 3);
+  margin-top: 8rem;
 }
 .embla__viewport {
   overflow: hidden;
@@ -46,13 +47,15 @@
 }
 .embla__slide__number {
   border: 0.2rem solid var(--detail-medium-contrast);
-  border-radius: 1.8rem;
+  border-radius: 50%;
   font-size: 4rem;
   font-weight: 600;
   display: flex;
   align-items: center;
   justify-content: center;
   height: var(--slide-height);
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
   user-select: none;
 }
 .embla__controls {
