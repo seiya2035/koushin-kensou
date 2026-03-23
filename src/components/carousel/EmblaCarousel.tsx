@@ -62,6 +62,12 @@ const EmblaCarousel = (props: PropType) => {
           ))}
         </div>
       </div>
+      <div className="embla_text">
+        <h2>代表 石川翔吾</h2>
+        <p>一一一一 一言 一一一一<br />
+        一一一一 一言 一一一一<br />
+        一一一一 一言 一一一一</p>
+      </div>
     </div>
     </div>
   )

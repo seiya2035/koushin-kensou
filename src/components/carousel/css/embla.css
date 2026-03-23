@@ -1,5 +1,5 @@
 .embla {
-  max-width: 80vw;
+  max-width: 90vw;
   margin: auto;
   --slide-height: 19rem;
   --slide-spacing: 1rem;
@@ -93,8 +93,8 @@
   border: 0;
   padding: 0;
   margin: 0;
-  width: 3.6rem;
-  height: 3.6rem;
+  width: 10rem;
+  height: 10rem;
   z-index: 1;
   border-radius: 50%;
   color: var(--text-body);
@@ -107,8 +107,9 @@
   color: var(--detail-high-contrast);
 }
 .embla__button__svg {
-  width: 35%;
-  height: 35%;
+  width: 210%;
+  height: 210%;
+  color: #000;
 }
 .embla__dots {
   display: flex;
@@ -156,4 +157,25 @@
 }
 .embla__dot--selected:after {
   opacity: 1;
+}
+.embla_text{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.embla_text h2,
+.embla_text p {
+  color: black;
+  font-family: "Hiragino Sans", "ヒラギノ角ゴ ProN W3", "ヒラギノ角ゴ ProN", sans-serif;
+}
+
+.embla_text p {
+  margin-top:-1rem;
+  font-size: 2.6rem;
+}
+.embla_text h2{
+  margin-top: -2rem;
+  font-size: 3rem;
 }

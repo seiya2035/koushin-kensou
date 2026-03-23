@@ -60,10 +60,10 @@ export const PrevButton: React.FC<PropType> = (props) => {
       type="button"
       {...restProps}
     >
-      <svg className="embla__button__svg" viewBox="0 0 532 532">
-        <path
+      <svg className="embla__button__svg" viewBox="0 0 100 100">
+        <polygon
           fill="currentColor"
-          d="M355.66 11.354c13.793-13.805 36.208-13.805 50.001 0 13.785 13.804 13.785 36.238 0 50.034L201.22 266l204.442 204.61c13.785 13.805 13.785 36.239 0 50.044-13.793 13.796-36.208 13.796-50.002 0a5994246.277 5994246.277 0 0 0-229.62-229.454 35.065 35.065 0 0 1-10.776-25.126c0-9.186 3.588-18.364 10.776-25.2L355.66 11.354Z"
+          points="10,50 90,10 90,90"
         />
       </svg>
       {children}
@@ -80,10 +80,10 @@ export const NextButton: React.FC<PropType> = (props) => {
       type="button"
       {...restProps}
     >
-      <svg className="embla__button__svg" viewBox="0 0 532 532">
-        <path
+      <svg className="embla__button__svg" viewBox="0 0 100 100">
+        <polygon
           fill="currentColor"
-          d="M176.34 520.646c-13.793 13.805-36.208 13.805-50.001 0-13.785-13.804-13.785-36.238 0-50.034L330.78 266 126.34 61.391c-13.785-13.805-13.785-36.239 0-50.044 13.793-13.796 36.208-13.796 50.002 0 72.684 72.609 229.623 229.498 229.623 229.454a35.065 35.065 0 0 1 10.776 25.126c0 9.186-3.588 18.364-10.776 25.2L176.34 520.646Z"
+          points="90,50 10,10 10,90"
         />
       </svg>
       {children}
