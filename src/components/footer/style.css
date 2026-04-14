@@ -1,0 +1,27 @@
+.footer-container {
+  background-color: #004AAD;
+  padding: 1.2rem;
+  font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer-container p{
+  color: #f9f9f9;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+
+.footer-legal {
+  position: absolute;
+  right: 1%;
+  color: #f9f9f9;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
