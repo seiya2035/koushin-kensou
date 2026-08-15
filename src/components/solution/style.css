@@ -1,0 +1,40 @@
+.solution {
+  position: relative;
+  background-image: url('/background-design/blue_pencil.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 42rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6rem 3rem;
+  font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+}
+
+.solution__overlay {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.4);
+}
+
+.solution__brand {
+  font-size: 6rem;
+  font-weight: 900;
+  margin: 0 0 1rem 0;
+}
+
+.solution__message {
+  font-size: 4.4rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .solution__brand {
+    font-size: 3.6rem;
+  }
+
+  .solution__message {
+    font-size: 2.8rem;
+  }
+}

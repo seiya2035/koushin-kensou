@@ -1,0 +1,147 @@
+.hero {
+  padding-top: 8rem;
+  background-image: url('/background-design/white_brik.jpg');
+  background-size: cover;
+  background-position: center;
+  font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+}
+
+.hero__inner {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 6rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  min-height: 60rem;
+}
+
+.hero__copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero__lead {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.hero__lead-quote {
+  color: #004AAD;
+}
+
+.hero__title {
+  font-size: 6rem;
+  font-weight: 900;
+  margin: 0;
+  line-height: 1.1;
+  color: #1a1a1a;
+}
+
+.hero__title-brand {
+  display: inline-block;
+  color: #FFD400;
+  -webkit-text-stroke: 2px #1a1a1a;
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+  font-size: 8rem;
+  letter-spacing: 0.2rem;
+}
+
+.hero__title-tail {
+  display: inline-block;
+  font-size: 4.4rem;
+  margin-left: 1rem;
+}
+
+.hero__stats {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 0 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.hero__stat {
+  background-color: #343B55;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 14rem;
+  height: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero__stat-label {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.hero__stat-value {
+  font-size: 3.6rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-top: 0.4rem;
+}
+
+.hero__stat-unit {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-left: 0.2rem;
+}
+
+.hero__figure {
+  position: relative;
+  min-height: 40rem;
+  background-color: rgba(200, 210, 225, 0.4);
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero__cta {
+  display: inline-block;
+  background-color: #004AAD;
+  color: #ffffff;
+  padding: 1.8rem 4rem;
+  border-radius: 999px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero__cta:hover {
+  background-color: #003a8a;
+}
+
+@media (max-width: 900px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__title {
+    font-size: 4rem;
+  }
+
+  .hero__title-brand {
+    font-size: 5.4rem;
+  }
+
+  .hero__title-tail {
+    font-size: 3rem;
+  }
+
+  .hero__stats {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

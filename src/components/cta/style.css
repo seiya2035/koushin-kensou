@@ -1,0 +1,90 @@
+.cta-band {
+  background-image: url('/background-design/yellow_radiation.png');
+  background-size: cover;
+  background-position: center;
+  padding: 6rem 3rem;
+  font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-band__inner {
+  max-width: 100rem;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  min-height: 30rem;
+}
+
+.cta-band__note {
+  font-size: 1.4rem;
+  color: #666;
+  margin: 0 0 1.2rem 0;
+}
+
+.cta-band__lead {
+  font-size: 3.4rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.cta-band__lead-strong {
+  border: 3px solid #d93025;
+  color: #d93025;
+  padding: 0.4rem 1.4rem;
+  border-radius: 4px;
+  font-size: 4rem;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.cta-band__sub {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 1.6rem 0 2.4rem 0;
+}
+
+.cta-band__button {
+  display: inline-block;
+  background-color: #004AAD;
+  color: #ffffff;
+  padding: 1.8rem 6rem;
+  border-radius: 999px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-band__button:hover {
+  background-color: #003a8a;
+}
+
+.cta-band__figure {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 22rem;
+  background-color: rgba(180, 190, 210, 0.4);
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .cta-band__figure {
+    display: none;
+  }
+
+  .cta-band__lead {
+    font-size: 2.4rem;
+  }
+
+  .cta-band__lead-strong {
+    font-size: 2.8rem;
+  }
+
+  .cta-band__sub {
+    font-size: 2.2rem;
+  }
+}

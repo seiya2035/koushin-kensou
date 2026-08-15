@@ -1,0 +1,48 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8rem;
+  background-color: #004AAD;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  z-index: 100;
+  font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+}
+
+.site-header__logo {
+  width: 7rem;
+  height: 7rem;
+  background-color: #ffffff;
+  color: #004AAD;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.2rem;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.site-header__cta {
+  background-color: #ffffff;
+  color: #004AAD;
+  border: none;
+  border-radius: 4px;
+  padding: 1.2rem 2.4rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.site-header__cta:hover {
+  background-color: #f2f6ff;
+}
