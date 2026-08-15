@@ -1,3 +1,10 @@
+.faq {
+    background-image: url('/background-design/white_wall.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 6rem 0 8rem 0;
+}
+
 .custom-accordion .span-accordion-summary {
     margin-bottom: 4rem;
     background-color: #343B55;
@@ -9,6 +16,7 @@
     margin-left: auto !important;
     margin-right: auto !important;
     box-shadow: none !important;
+    background-color: transparent !important;
 }
 
 .custom-accordion--first {

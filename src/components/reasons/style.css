@@ -1,0 +1,124 @@
+.reasons {
+  padding: 8rem 3rem;
+  background-color: #ffffff;
+  font-family: "Noto Sans JP", "Hiragino Sans", sans-serif;
+}
+
+.reasons__heading {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.reasons__title {
+  background-color: #343B55;
+  color: #ffffff;
+  padding: 2rem 6rem;
+  border-radius: 999px;
+  font-size: 3.6rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.reasons__title-accent {
+  color: #FFD400;
+}
+
+.reasons__list {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+
+.reason {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  padding: 4rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+}
+
+.reason--blue {
+  background-image: url('/background-design/blue_pencil.png');
+}
+.reason--red {
+  background-image: url('/background-design/red_pencil.png');
+  grid-template-columns: 1fr 1.2fr;
+}
+.reason--red .reason__figure {
+  order: -1;
+}
+.reason--orange {
+  background-image: url('/background-design/orange_pencil.png');
+}
+
+.reason__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.reason__title {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.reason__no {
+  font-size: 5rem;
+  color: #343B55;
+}
+
+.reason__subtitle {
+  margin: 0;
+  font-size: 3.4rem;
+  font-weight: 800;
+  color: #1a1a1a;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.reason__body {
+  margin: 1rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  color: #333;
+  line-height: 1.8;
+}
+
+.reason__figure {
+  min-height: 26rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .reason,
+  .reason--red {
+    grid-template-columns: 1fr;
+  }
+
+  .reason--red .reason__figure {
+    order: 0;
+  }
+
+  .reason__title {
+    font-size: 3rem;
+  }
+
+  .reason__subtitle {
+    font-size: 2.4rem;
+  }
+}

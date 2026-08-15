@@ -1,9 +1,16 @@
-import React from 'react'
+import './style.css';
 
 const Header = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <header className="site-header">
+      <div className="site-header__logo">
+        煌真<br />建装
+      </div>
+      <a href="#contact" className="site-header__cta">
+        無料相談はこちら！
+      </a>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
